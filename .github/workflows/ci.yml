@@ -22,7 +22,7 @@ jobs:
         run: go test -cover ./...
 
       - name: Style
-        run: go fmt ./...
+        run: test -z "$(go fmt ./...)"
 
       - name: Success
         run: (exit 0)
