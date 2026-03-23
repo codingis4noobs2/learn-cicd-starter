@@ -21,7 +21,7 @@ jobs:
       - name: Run tests
         run: go test -cover ./...
 
-      - name: Check code formatting
+      - name: Style
         run: go fmt ./...
 
       - name: Success
